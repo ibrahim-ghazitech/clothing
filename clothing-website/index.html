@@ -12,13 +12,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
 
+    <!-- Navigation Start -->
 
     <nav class="navigation">
-        <div class="container">
+        <div class="container custom-contain">
             <div class="row">
                 <div class="col-md-8 menu-list">
                     <img src="assest/images/logo.svg" class="logo" alt="logo">
@@ -64,40 +66,320 @@
         </div>
     </nav>
 
+    <!-- Banner Start -->
+
     <section class="banner">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 banner-content">
-                    <h1 class="banner-heading">
-                        Limited Edition
-                        Collection
-                    </h1>
-                    <p class="banner-para">
-                        Shop exclusive pieces from our limited edition collection
-                    </p>
+            <div class="row b-wrapper">
+                <div class="col-md-5">
+                    <div class="b-content">
+                        <h1 class="b-heading">
+                            Limited Edition Collection
+                        </h1>
+                        <p class="b-para">
+                            Shop exclusive pieces from our limited edition collection
+                        </p>
+                        <button class="btn">
+                            <a href="javascript:void(0)">
+                                <span>Shop collection</span>
+                                <i class="fa-solid fa-chevron-right btn-icon"></i>
+                            </a>
+                        </button>
 
-                    <button>
-                        <a href="javascript:void(0)" class="shop-collection">Shop Collection</a>
-                        <i class="fa-solid fa-chevron-right button-icon"></i>
-                    </button>
-                </div>
-                <div class="col-md-6 banner-images">
-                    <!-- <div class="b-image-1">
-                        <img src="assest/images/main-2.jpg" class="banner-img-1" alt="">
                     </div>
-                    <div class="b-image-2">
-                        <img src="assest/images/main-1.jpg" class="banner-img-2" alt="">
-                    </div> -->
-                <div class="b-img-1">
-                    <img src="assest/images/main-sm.jpg" class="banner-img-1">
                 </div>
-                <div class="b-img-2">
-                    <img src="assest/images/main-lg.jpg" class="banner-img-2">
-                </div>
+                <div class="col-md-7 b-wrapper-images">
+                    <img src="assest/images/main-sm.jpg" class="b-img-1" alt="">
+                    <img src="assest/images/main-lg.jpg" class="b-img-2" alt="">
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- slider Start -->
+
+    <div class="slider">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="slider-wrapper">
+                    <span>
+                        <p class="slider-name">Limited time offer: fashion sale you can't resist  <i class="fa-solid fa-caret-up slider-icon"></i></p>
+                    </span>
+                    <span>
+                        <p class="slider-name">free shipping and return <i class="fa-solid fa-caret-up slider-icon"></i></p>
+                    </span>
+                    <span>
+                        <p class="slider-name">new season,new styles: fashion sale you can't resist <i class="fa-solid fa-caret-up slider-icon"></i></p>
+                    </span>
+                    <span>
+                        <p class="slider-name">Limited time offer: fashion sale you can't resist <i class="fa-solid fa-caret-up slider-icon"></i></p>
+                    </span>
+                    <span>
+                        <p class="slider-name">free shipping and return <i class="fa-solid fa-caret-up slider-icon"></i></p>
+                    </span>
+                    <!-- <span>
+                        <p class="slider-name">new season,new styles: fashion sale you can't resist <i class="fa-solid fa-caret-up slider-icon"></i></p>    
+                    </span> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Summer Collection Start -->
+
+    <section class="summer-collection">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 s-c-top-content">
+                    <h2 class="s-collection-heading">
+                        Summer Essentials
+                    </h2>
+                    <p class="s-collection-para">
+                        Beat the Heat in Style: It's time to stock up on summer essentials!
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="summer-collection-wrapper">
+                        <div class="summer-c-1" id="s-collection-img-1">
+                            <div class="summer-content">
+                                <div class="quick-add">
+                                    <a href="javascript:void(0)">
+                                        <span tooltip="Quick Add">
+                                            <i class="fa-solid fa-bag-shopping quick-icon"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="already-wishlist">
+                                    <a href="javascript:void(0)">
+                                        <span tooltip="Alredy Wishlisted">
+                                            <i class="fa-solid fa-trash-can quick-icon"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="already-compared">
+                                    <a href="javascript:void(0)">
+                                        <span tooltip="Already Compared">
+                                            <i class="fa-solid fa-check quick-icon"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="quick-view">
+                                    <a href="javascript:void(0)">
+                                        <span tooltip="Quick View">
+                                            <i class="fa-regular fa-eye quick-icon"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-pricing">
+                        <p class="category">
+                            V-neck Linen T-shirt
+                        </p>
+                        <p class="pricing">
+                            $14.95
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="summer-collection-wrapper">
+                        <div class="summer-c-1" id="s-collection-img-2">
+                            <div class="summer-content">
+                                <div class="quick-add">
+                                    <a href="javascript:void(0)">
+                                        <span tooltip="Quick Add">
+                                            <i class="fa-solid fa-bag-shopping quick-icon"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="already-wishlist">
+                                    <a href="javascript:void(0)">
+                                        <span tooltip="Alredy Wishlisted">
+                                            <i class="fa-solid fa-trash-can quick-icon"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="already-compared">
+                                    <a href="javascript:void(0)">
+                                        <span tooltip="Already Compared">
+                                            <i class="fa-solid fa-check quick-icon"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="quick-view">
+                                    <a href="javascript:void(0)">
+                                        <span tooltip="Quick View">
+                                            <i class="fa-regular fa-eye quick-icon"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-pricing">
+                        <p class="category">
+                            Loose Fit Sweatshirt
+                        </p>
+                        <p class="pricing">
+                            $10.00
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="summer-collection-wrapper">
+                        <div class="summer-c-1" id="s-collection-img-3">
+                            <div class="summer-content">
+                                <div class="quick-add">
+                                    <a href="javascript:void(0)">
+                                        <span tooltip="Quick Add">
+                                            <i class="fa-solid fa-bag-shopping quick-icon"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="already-wishlist">
+                                    <a href="javascript:void(0)">
+                                        <span tooltip="Alredy Wishlisted">
+                                            <i class="fa-solid fa-trash-can quick-icon"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="already-compared">
+                                    <a href="javascript:void(0)">
+                                        <span tooltip="Already Compared">
+                                            <i class="fa-solid fa-check quick-icon"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="quick-view">
+                                    <a href="javascript:void(0)">
+                                        <span tooltip="Quick View">
+                                            <i class="fa-regular fa-eye quick-icon"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-pricing">
+                        <p class="category">
+                            Regular Fit Oxford Shirt
+                        </p>
+                        <p class="pricing">
+                            $12.00
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="summer-collection-wrapper">
+                        <div class="summer-c-1" id="s-collection-img-4">
+                            <div class="summer-content">
+                                <div class="quick-add">
+                                    <a href="javascript:void(0)">
+                                        <span tooltip="Quick Add">
+                                            <i class="fa-solid fa-bag-shopping quick-icon"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="already-wishlist">
+                                    <a href="javascript:void(0)">
+                                        <span tooltip="Alredy Wishlisted">
+                                            <i class="fa-solid fa-trash-can quick-icon"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="already-compared">
+                                    <a href="javascript:void(0)">
+                                        <span tooltip="Already Compared">
+                                            <i class="fa-solid fa-check quick-icon"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="quick-view">
+                                    <a href="javascript:void(0)">
+                                        <span tooltip="Quick View">
+                                            <i class="fa-regular fa-eye quick-icon"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-pricing">
+                        <p class="category">
+                            Oversized Printed T-shirt
+                        </p>
+                        <p class="pricing">
+                            $15.00
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Count Down Start -->
+
+    <section class="count-down">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="count-heading">
+                        One-Time Only
+                    </h4>
+                    <p class="count-para">
+                        Discover the versatility of denim with our collection of jeans, jackets
+                    </p>
+                    <a href="javascript:void(0)">
+                        <span>Shop now</span> 
+                        <i class="fa-solid fa-arrow-up-long shop-icon"></i>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <div class="count-down">
+                        <span class="count-down-item">
+                            <span class="count-value">
+                                221
+                            </span>
+                            <span class="count-label">
+                                Days
+                            </span>
+                        </span>
+                        <span class="count-down-item">
+                            <span class="count-value">
+                                0
+                            </span>
+                            <span class="count-label">
+                                Hours
+                            </span>
+                        </span>
+                        <span class="count-down-item">
+                            <span class="count-value">
+                                1
+                            </span>
+                            <span class="count-label">
+                                Mins
+                            </span>
+                        </span>
+                        <span class="count-down-item">
+                            <span class="count-value">
+                                21
+                            </span>
+                            <span class="count-label">
+                                Secs
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
